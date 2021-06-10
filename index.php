@@ -87,7 +87,7 @@
                 </header>
 
                 <form action="" class="main_footer_optin_form">
-                    <input type="email" name="email" placeholder="Informe seu e-mail:">
+                    <input  class="radius"type="email" name="email" placeholder="Informe seu e-mail:">
                     <button class="btn radius transition icon-mail">Quero meu desconto!</button>
                 </form>
             </article>
@@ -138,9 +138,9 @@
                 </div>
 
                 <nav class="main_footer_bottom_social">
-                    <a href="#" title="" class="icon-facebook icon-notext"></a>
-                    <a href="#" title="" class="icon-instagram icon-notext"></a>
-                    <a href="#" title="" class="icon-youtube icon-notext"></a>
+                    <a href="#" title="" class="icon-facebook icon-notext transition"></a>
+                    <a href="#" title="" class="icon-instagram icon-notext transition"></a>
+                    <a href="#" title="" class="icon-youtube icon-notext transition"></a>
                 </nav>
         </div>
         </div>
