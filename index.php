@@ -69,11 +69,83 @@
     </header>
 
     <main class="main_content">
+    <div class="main_content_slide j_slide">
+                <a href="j_slide_item" href="#" title=""><img src="Uploads/featured-01.jpg" alt="" title=""/></a>
+                <a href="j_slide_item" href="#" title=""><img src="Uploads/featured-02.jpg" alt="" title=""/></a>
+                <a href="j_slide_item" href="#" title=""><img src="Uploads/featured-03.jpg" alt="" title=""/></a>
+                <div class="j_slide_nav"></div>
+    </div>
+
         <section class="pdt_gallery">
             <div class="container">
                 <header class="main_content_header">
                     <h1 class="main_content_header_title">Ofertas da semana:</h1>
                 </header>
+
+                <div class="flex">
+
+                    <div class="pdt_gallery_list pdt_gallery_featured flex-2">
+                        <article class="pdt_gallery_item flex-2">
+                            <a href="" title=""><img src="Uploads/products/06.jpg" alt=""></a>  
+                            <header class="pdt_gallery_item_desc">
+                            <h2 class="pdt_gallery_item_desc_title"><a class="transition" href="#" title="">Calça Moletom Confort Mama Latina</a></h2>
+                                <div class="pdt_gallery_item_desc_price">
+                                    <p><b>R$ 59,90</b> <span>R$ 99,90</span></p>
+                                </div>
+                                <p>2x R$ 29,95</p>
+                            </header>  
+                        </article>
+                    </div>
+
+                    <div class="pdt_gallery_list flex">
+                        <?php
+                            $pdt = 0;
+                            for ($pdt = 1; $pdt < 5 ; $pdt++) { 
+                                
+                        ?>
+                        <article class="pdt_gallery_item flex-2">
+                            <a href="" title=""><img src="Uploads/products/<?= str_pad($pdt, 2, 0, STR_PAD_LEFT);?>.jpg" alt=""></a>  
+                            <header class="pdt_gallery_item_desc">
+                            <h2 class="pdt_gallery_item_desc_title"><a class="transition" href="#" title="">Calça Moletom Confort Mama Latina</a></h2>
+                                <div class="pdt_gallery_item_desc_price">
+                                    <p><b>R$ 59,90</b> <span>R$ 99,90</span></p>
+                                </div>
+                                <p>2x R$ 29,95</p>
+                            </header>  
+                        </article>
+                        <?php
+                            }
+                        ?>
+
+                    </div>
+                </div>
+
+                <div class="pdt_gallery_normalize">
+                    <img class="pdt_gallery_item pdt_gallery_banner" src="Uploads/featured-01.jpg" alt="" title/>
+                </div>
+
+                <div class="pdt_gallery_normalize flex">
+                        <?php
+                            $pdt = 0;
+                            for ($pdt = 5; $pdt < 9; $pdt++) {
+                                
+                        ?>
+                        <article class="pdt_gallery_item flex-2">
+                            <a href="" title=""><img src="Uploads/products/<?= str_pad($pdt, 2, 0, STR_PAD_LEFT);?>.jpg" alt=""></a>  
+                            <header class="pdt_gallery_item_desc">
+                                <h2 class="pdt_gallery_item_desc_title"><a class="transition" href="#" title="">Calça Moletom Confort Mama Latina</a></h2>
+                                <div class="pdt_gallery_item_desc_price">
+                                    <p><b>R$ 59,90</b> <span>R$ 99,90</span></p>
+                                </div>
+                                <p>2x R$ 29,95</p>
+                            </header>  
+                        </article>
+                        <?php
+                            }
+                        ?>
+
+                    </div>
+                </div>
             </div>
         </section>
     </main>
