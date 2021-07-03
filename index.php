@@ -69,12 +69,15 @@
     </header>
 
     <main class="main_content">
-    <div class="main_content_slide j_slide">
-                <a href="j_slide_item" href="#" title=""><img src="Uploads/featured-01.jpg" alt="" title=""/></a>
-                <a href="j_slide_item" href="#" title=""><img src="Uploads/featured-02.jpg" alt="" title=""/></a>
-                <a href="j_slide_item" href="#" title=""><img src="Uploads/featured-03.jpg" alt="" title=""/></a>
-                <div class="j_slide_nav"></div>
-    </div>
+        <div class="main_content_slide j_slide">
+            <a class="j_slide_item" href="#" title=""><img src="Uploads/featured-01.jpg" alt="" title="" /></a>
+            <a class="j_slide_item" href="#" title=""><img src="Uploads/featured-02.jpg" alt="" title="" /></a>
+            <a class="j_slide_item" href="#" title=""><img src="Uploads/featured-03.jpg" alt="" title="" /></a>
+            <div class="j_slide_nav">
+            <span class="rounded transition active"></span>
+            <span class="rounded transition"></span>
+        </div>
+        </div>
 
         <section class="pdt_gallery">
             <div class="container">
@@ -86,64 +89,155 @@
 
                     <div class="pdt_gallery_list pdt_gallery_featured flex-2">
                         <article class="pdt_gallery_item flex-2">
-                            <a href="" title=""><img src="Uploads/products/06.jpg" alt=""></a>  
-                            <header class="pdt_gallery_item_desc">
-                            <h2 class="pdt_gallery_item_desc_title"><a class="transition" href="#" title="">Calça Moletom Confort Mama Latina</a></h2>
-                                <div class="pdt_gallery_item_desc_price">
-                                    <p><b>R$ 59,90</b> <span>R$ 99,90</span></p>
-                                </div>
-                                <p>2x R$ 29,95</p>
-                            </header>  
-                        </article>
-                    </div>
-
-                    <div class="pdt_gallery_list flex">
-                        <?php
-                            $pdt = 0;
-                            for ($pdt = 1; $pdt < 5 ; $pdt++) { 
-                                
-                        ?>
-                        <article class="pdt_gallery_item flex-2">
-                            <a href="" title=""><img src="Uploads/products/<?= str_pad($pdt, 2, 0, STR_PAD_LEFT);?>.jpg" alt=""></a>  
-                            <header class="pdt_gallery_item_desc">
-                            <h2 class="pdt_gallery_item_desc_title"><a class="transition" href="#" title="">Calça Moletom Confort Mama Latina</a></h2>
-                                <div class="pdt_gallery_item_desc_price">
-                                    <p><b>R$ 59,90</b> <span>R$ 99,90</span></p>
-                                </div>
-                                <p>2x R$ 29,95</p>
-                            </header>  
-                        </article>
-                        <?php
-                            }
-                        ?>
-
-                    </div>
-                </div>
-
-                <div class="pdt_gallery_normalize">
-                    <img class="pdt_gallery_item pdt_gallery_banner" src="Uploads/featured-01.jpg" alt="" title/>
-                </div>
-
-                <div class="pdt_gallery_normalize flex">
-                        <?php
-                            $pdt = 0;
-                            for ($pdt = 5; $pdt < 9; $pdt++) {
-                                
-                        ?>
-                        <article class="pdt_gallery_item flex-2">
-                            <a href="" title=""><img src="Uploads/products/<?= str_pad($pdt, 2, 0, STR_PAD_LEFT);?>.jpg" alt=""></a>  
+                            <a href="" title=""><img src="Uploads/products/06.jpg" alt=""></a>
                             <header class="pdt_gallery_item_desc">
                                 <h2 class="pdt_gallery_item_desc_title"><a class="transition" href="#" title="">Calça Moletom Confort Mama Latina</a></h2>
                                 <div class="pdt_gallery_item_desc_price">
                                     <p><b>R$ 59,90</b> <span>R$ 99,90</span></p>
                                 </div>
                                 <p>2x R$ 29,95</p>
-                            </header>  
+                            </header>
                         </article>
+                    </div>
+
+                    <div class="pdt_gallery_list flex">
                         <?php
-                            }
+                        $pdt = 0;
+                        for ($pdt = 1; $pdt < 5; $pdt++) {
+
+                        ?>
+                            <article class="pdt_gallery_item flex-2">
+                                <a href="" title=""><img src="Uploads/products/<?= str_pad($pdt, 2, 0, STR_PAD_LEFT); ?>.jpg" alt=""></a>
+                                <header class="pdt_gallery_item_desc">
+                                    <h2 class="pdt_gallery_item_desc_title"><a class="transition" href="#" title="">Calça Moletom Confort Mama Latina</a></h2>
+                                    <div class="pdt_gallery_item_desc_price">
+                                        <p><b>R$ 59,90</b> <span>R$ 99,90</span></p>
+                                    </div>
+                                    <p>2x R$ 29,95</p>
+                                </header>
+                            </article>
+                        <?php
+                        }
                         ?>
 
+                    </div>
+                </div>
+
+                <div class="pdt_gallery_normalize">
+                    <img class="pdt_gallery_item pdt_gallery_banner" src="Uploads/featured-01.jpg" alt="" title />
+                </div>
+
+                <div class="pdt_gallery_normalize flex">
+                    <?php
+                    $pdt = 0;
+                    for ($pdt = 5; $pdt < 9; $pdt++) {
+
+                    ?>
+                        <article class="pdt_gallery_item flex-2">
+                            <a href="" title=""><img src="Uploads/products/<?= str_pad($pdt, 2, 0, STR_PAD_LEFT); ?>.jpg" alt=""></a>
+                            <header class="pdt_gallery_item_desc">
+                                <h2 class="pdt_gallery_item_desc_title"><a class="transition" href="#" title="">Calça Moletom Confort Mama Latina</a></h2>
+                                <div class="pdt_gallery_item_desc_price">
+                                    <p><b>R$ 59,90</b> <span>R$ 99,90</span></p>
+                                </div>
+                                <p>2x R$ 29,95</p>
+                            </header>
+                        </article>
+                    <?php
+                    }
+                    ?>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="pdt_gallery pdt_select">
+            <div class="container">
+                <header class="pdt_select_header">
+                    <h1>
+                     <span class="j_tabs_nav transition radius">Eles</span>
+                    <span class="j_tabs_nav transition radius">Elas</span>
+                    </h1>
+                </header>
+
+                <div class="j_tabs">
+                    <div class="j_tabs_item">
+                        <div class="flex">
+                            <div class="pdt_gallery_list pdt_gallery_featured flex-2">
+                                <article class="pdt_gallery_item flex-2">
+                                    <a href="" title=""><img src="Uploads/products/15.jpg" alt=""></a>
+                                    <header class="pdt_gallery_item_desc">
+                                        <h2 class="pdt_gallery_item_desc_title"><a class="transition" href="#" title="">Calça Moletom Confort Mama Latina</a></h2>
+                                        <div class="pdt_gallery_item_desc_price">
+                                            <p><b>R$ 59,90</b> <span>R$ 99,90</span></p>
+                                        </div>
+                                        <p>2x R$ 29,95</p>
+                                    </header>
+                                </article>
+                            </div>
+
+                            <div class="pdt_gallery_list flex">
+                                <?php
+                                $pdt = 0;
+                                for ($pdt = 11; $pdt < 15; $pdt++) {
+
+                                ?>
+                                    <article class="pdt_gallery_item flex-2">
+                                        <a href="" title=""><img src="Uploads/products/<?= str_pad($pdt, 2, 0, STR_PAD_LEFT); ?>.jpg" alt=""></a>
+                                        <header class="pdt_gallery_item_desc">
+                                            <h2 class="pdt_gallery_item_desc_title"><a class="transition" href="#" title="">Calça Moletom Confort Mama Latina</a></h2>
+                                            <div class="pdt_gallery_item_desc_price">
+                                                <p><b>R$ 59,90</b> <span>R$ 99,90</span></p>
+                                            </div>
+                                            <p>2x R$ 29,95</p>
+                                        </header>
+                                    </article>
+                                <?php
+                                }
+                                ?>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="j_tabs_item">
+                        <div class="flex">
+                            <div class="pdt_gallery_list pdt_gallery_featured flex-2">
+                                <article class="pdt_gallery_item flex-2">
+                                    <a href="" title=""><img src="Uploads/products/09.jpg" alt=""></a>
+                                    <header class="pdt_gallery_item_desc">
+                                        <h2 class="pdt_gallery_item_desc_title"><a class="transition" href="#" title="">Calça Moletom Confort Mama Latina</a></h2>
+                                        <div class="pdt_gallery_item_desc_price">
+                                            <p><b>R$ 59,90</b> <span>R$ 99,90</span></p>
+                                        </div>
+                                        <p>2x R$ 29,95</p>
+                                    </header>
+                                </article>
+                            </div>
+
+                            <div class="pdt_gallery_list flex">
+                                <?php
+                                $pdt = 0;
+                                for ($pdt = 5; $pdt < 9; $pdt++) {
+
+                                ?>
+                                    <article class="pdt_gallery_item flex-2">
+                                        <a href="" title=""><img src="Uploads/products/<?= str_pad($pdt, 2, 0, STR_PAD_LEFT); ?>.jpg" alt=""></a>
+                                        <header class="pdt_gallery_item_desc">
+                                            <h2 class="pdt_gallery_item_desc_title"><a class="transition" href="#" title="">Calça Moletom Confort Mama Latina</a></h2>
+                                            <div class="pdt_gallery_item_desc_price">
+                                                <p><b>R$ 59,90</b> <span>R$ 99,90</span></p>
+                                            </div>
+                                            <p>2x R$ 29,95</p>
+                                        </header>
+                                    </article>
+                                <?php
+                                }
+                                ?>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -159,7 +253,7 @@
                 </header>
 
                 <form action="" class="main_footer_optin_form">
-                    <input  class="radius"type="email" name="email" placeholder="Informe seu e-mail:">
+                    <input class="radius" type="email" name="email" placeholder="Informe seu e-mail:">
                     <button class="btn radius transition icon-mail">Quero meu desconto!</button>
                 </form>
             </article>
@@ -190,12 +284,12 @@
                 <nav class="flex-4">
                     <h4>Pagamento seguro:</h4>
                     <ul class="main_footer_nav_pays flex">
-                    <li class="flex-4"><img src="Assets/Cards/mastercard.png" alt="" title=""></li>
-                    <li class="flex-4"><img src="Assets/Cards/visa.png" alt="" title=""></li>
-                    <li class="flex-4"><img src="Assets/Cards/amex.png" alt="" title=""></li>
-                    <li class="flex-4"><img src="Assets/Cards/aura.png" alt="" title=""></li>
-                    <li class="flex-4"><img src="Assets/Cards/dinners.png" alt="" title=""></li>
-                    <li class="flex-4"><img src="Assets/Cards/discover.png" alt="" title=""></li>
+                        <li class="flex-4"><img src="Assets/Cards/mastercard.png" alt="" title=""></li>
+                        <li class="flex-4"><img src="Assets/Cards/visa.png" alt="" title=""></li>
+                        <li class="flex-4"><img src="Assets/Cards/amex.png" alt="" title=""></li>
+                        <li class="flex-4"><img src="Assets/Cards/aura.png" alt="" title=""></li>
+                        <li class="flex-4"><img src="Assets/Cards/dinners.png" alt="" title=""></li>
+                        <li class="flex-4"><img src="Assets/Cards/discover.png" alt="" title=""></li>
                     </ul>
                 </nav>
             </div>
@@ -203,7 +297,7 @@
         </div>
 
         <div class="main_footer_bottom">
-        <div class="container flex">
+            <div class="container flex">
                 <div class="main_footer_bottom_copy">
                     <img src="Themes/WdpShoes/Images/wdpshoes_logo_black.png" alt="WdpShoes" title="WdpShoes">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -214,7 +308,7 @@
                     <a href="#" title="" class="icon-instagram icon-notext transition"></a>
                     <a href="#" title="" class="icon-youtube icon-notext transition"></a>
                 </nav>
-        </div>
+            </div>
         </div>
 
     </footer>
