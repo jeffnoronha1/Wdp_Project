@@ -345,9 +345,9 @@ FLEXBOX
 }
 
 .j_tabs_item {
-  /* display: none; */
+  display: none;
 }
 
-.j_tabs_item:first {
+.j_tabs_item:first-child {
   display: block;
 }
