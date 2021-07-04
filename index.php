@@ -242,6 +242,31 @@
                 </div>
             </div>
         </section>
+
+        <section class="blog_gallery">
+               <div class="container">
+                   <header class="main_content_header">
+                    <h1 class="main_content_header_title">Blog</h1>
+                   </header>
+
+                   <div class="flex">
+                   <?php
+                   for($b = 1; $b < 7; $b++){
+                       ?>
+                       <article class="blog_gallery_item transition flex-3">
+                        <a href="" title="">
+                        <img alt="" title="" src="./Uploads/blog/<?= str_pad($b, 2, 0, STR_PAD_LEFT);?>.jpg"/>
+                        </a>
+                        <header>
+                        <h2><a class="transition" href="" title="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h2>
+                        </header>
+                       </article>
+                   <?php
+                    }
+                   ?>
+                   </div>
+               </div>                         
+        </section>
     </main>
 
     <footer class="main_footer">
