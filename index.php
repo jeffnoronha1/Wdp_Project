@@ -74,8 +74,6 @@
             <a class="j_slide_item" href="#" title=""><img src="Uploads/featured-02.jpg" alt="" title="" /></a>
             <a class="j_slide_item" href="#" title=""><img src="Uploads/featured-03.jpg" alt="" title="" /></a>
             <div class="j_slide_nav">
-            <span class="rounded transition active"></span>
-            <span class="rounded transition"></span>
         </div>
         </div>
 
@@ -223,7 +221,7 @@
 
                                 ?>
                                     <article class="pdt_gallery_item flex-2">
-                                        <a href="" title=""><img src="Uploads/products/<?= str_pad($pdt, 2, 0, STR_PAD_LEFT); ?>.jpg" alt=""></a>
+                                        <a href="" title="" alt=""><img src="Uploads/products/<?= str_pad($pdt, 2, 0, STR_PAD_LEFT); ?>.jpg"></a>
                                         <header class="pdt_gallery_item_desc">
                                             <h2 class="pdt_gallery_item_desc_title"><a class="transition" href="#" title="">Calça Moletom Confort Mama Latina</a></h2>
                                             <div class="pdt_gallery_item_desc_price">
@@ -337,6 +335,9 @@
         </div>
 
     </footer>
+
+    <script src="Assets/jquery.js"></script>
+    <script src="Assets/scripts.js"></script>
 </body>
 
 </html>
