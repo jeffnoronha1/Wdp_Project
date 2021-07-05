@@ -85,9 +85,9 @@
 
                 <div class="flex">
 
-                    <div class="pdt_gallery_list pdt_gallery_featured flex-2">
+                    <div class="pdt_gallery_list pdt_gallery_featured">
                         <article class="pdt_gallery_item flex-2">
-                            <a href="" title=""><img src="Uploads/products/06.jpg" alt=""></a>
+                             <a href="" title=""><img src="Uploads/products/06.jpg" alt=""></a>
                             <header class="pdt_gallery_item_desc">
                                 <h2 class="pdt_gallery_item_desc_title"><a class="transition" href="#" title="">Calça Moletom Confort Mama Latina</a></h2>
                                 <div class="pdt_gallery_item_desc_price">
@@ -122,7 +122,7 @@
                 </div>
 
                 <div class="pdt_gallery_normalize">
-                    <img class="pdt_gallery_item pdt_gallery_banner" src="Uploads/featured-01.jpg" alt="" title />
+                    <img class="pdt_gallery_item pdt_gallery_banner" src="Uploads/featured-01.jpg" alt="" title="" />
                 </div>
 
                 <div class="pdt_gallery_normalize flex">
@@ -162,7 +162,7 @@
                 <div class="j_tabs">
                     <div class="j_tabs_item">
                         <div class="flex">
-                            <div class="pdt_gallery_list pdt_gallery_featured flex-2">
+                            <div class="pdt_gallery_list pdt_gallery_featured">
                                 <article class="pdt_gallery_item flex-2">
                                     <a href="" title=""><img src="Uploads/products/15.jpg" alt=""></a>
                                     <header class="pdt_gallery_item_desc">
@@ -201,7 +201,7 @@
 
                     <div class="j_tabs_item">
                         <div class="flex">
-                            <div class="pdt_gallery_list pdt_gallery_featured flex-2">
+                            <div class="pdt_gallery_list pdt_gallery_featured">
                                 <article class="pdt_gallery_item flex-2">
                                     <a href="" title=""><img src="Uploads/products/09.jpg" alt=""></a>
                                     <header class="pdt_gallery_item_desc">
