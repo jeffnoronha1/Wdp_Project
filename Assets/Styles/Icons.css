@@ -43,10 +43,14 @@
   margin-right: 0.4em;
 }
 
-.icon-notext:before {
+.icon-notext:before{
   top: 0;
-  margin-right: 0;
+  margin-right: 0 !Important;;
 }
+
+/*
+ICONS
+*/
 
 .icon-facebook:before {
   content: "\61";
@@ -66,7 +70,7 @@
 .icon-alert:before {
   content: "\66";
 }
-.icon-info:before {
+.icon-inco:before {
   content: "\67";
 }
 .icon-error:before {
@@ -83,4 +87,16 @@
 }
 .icon-cart:before {
   content: "\6c";
+}
+.icon-broken:before {
+  content: "\6d";
+}
+.icon-star-e:before {
+  content: "\6e";
+}
+.icon-minus:before {
+  content: "\70";
+}
+.icon-plus:before {
+  content: "\6f";
 }
