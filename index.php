@@ -1,3 +1,15 @@
+<?php
+define("BASE", "https://www.localhost/wdp_project");
+define("THEME", "WdpShoes");
+define("THEME_PATH", __DIR__."/Themes/" . THEME);
+define("THEME_LINK",  __DIR__."/Themes/" . THEME);
+$configBase = BASE;
+$configUrl = explode("/", strip_tags(trim(filter_input(INPUT_GET, 'url', FILTER_DEFAULT))));
+$configUrl[0] = (!empty($configUrl[0]) ? $configUrl[0] : "index");
+$configThemePath = THEME_PATH;
+$configThemeLink = THEME_LINK;
+$configSiteName = "WdpShoes";
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
