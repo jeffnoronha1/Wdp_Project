@@ -71,4 +71,22 @@ $(function () {
       });
     });
   }
+
+  // J_GALLERY
+
+  $(".j_gallery_item").click(function(){
+    var item = $(this);
+    var items = $(".j_gallery_item");
+    var home = $(".j_gallery_home");
+
+    if(!item.hasClass("active")){
+      items.removeClass("active");
+      item.addClass("active");
+
+      home.fadeTo(200, 0.1, function(){
+          $(this).attr("src", item.find("img").attr("src"));
+          $(this).fadeTo(200,1);
+      });
+    }
+  });
 });
