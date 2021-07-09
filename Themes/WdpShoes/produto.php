@@ -61,9 +61,56 @@
     </article>
 </div>
 
-    <div class="main_product_description">
+    <section class="main_product_related">
         <div class="container">
-            ANCHOR!
+            <header class="main_content_header">
+                <h2 class="main_content_header_title">Produtos relacionados:</h2>
+            </header>
+
+            <div class="pdt_gallery pdt_gallery_normalize flex">
+                <?php
+                    for($pdt = 5; $pdt < 13; $pdt++){
+                        require "{$configThemePath}/Templates/product.php";
+                    }
+                ?>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <article class="main_product_description">
+        <div class="container">
+            <header class="main_product_description_header">
+                <span class="main_product_description_header_tag">DESCRIÇÃO:</span>
+                <h4>Top Gonew c/ Bojo Removível Mármore Tule Média Sustentação - Estampado</h4>
+                <p>Exercite-se com estilo usando o Top Gonew Mármore Detalhe Tule! Trazendo um design moderno e uma estampa exclusiva,
+                    este Top Esportivo da Gonew entra em cena para oferecer ótima sustentação ao busto durante seus treinos e corridas.
+                Ele é confeccionado em tecido elástico, e conta com detalhe em tule na parte da frente, que deixa o visual da peça sensual e muito mais respirável.
+            Não perca tempo e compre já o seu Top Gonew Mármore Detalhe Tule Média Sustentação!</p>
+
+                <form class="main_product_checkout_cart">
+
+                <h2>Selecione o <b>tamanho:</b></h2>
+
+                <span class="radius transition">P</span>
+                <span class="radius transition">M</span>
+                <span class="radius transition">G</span>
+                <span class="radius transition">GG</span>
+
+                <div class="main_product_checkout_cart_act">
+                <div class="radius">
+                <span class="icon-plus icon-notext"></span>
+                <input type="text" value="1">
+                <span class="icon-minus icon-notext"></span>
+                </div>
+
+                <button class="btn icon-cart radius transition">COMPRAR</button>
+                </div>
+                </form>
+            </header>
+                
+                <div class="main_product_description_thumb">
+                <img class="radius" src="<?= $configBase; ?>/Uploads/products/16-1.jpg" alt="" title=""></a>
+                </div>
+        </div>
+    </article>
 </main>
