@@ -13,14 +13,14 @@
                     </form>
                 </div>
                 <div class="main_header_nav_menu">
-                    <a href="<?= "{$configBase}/conta";?>" class="icon-cart icon-notext trasintion main_header_nav_menu_cart"><span>3</span></a>
+                    <a href="<?= "{$configBase}/checkout";?>" class="icon-cart icon-notext trasintion main_header_nav_menu_cart"><span>3</span></a>
                     <div class="main_header_nav_menu_user">
-                        <a href="<?= $configBase; ?>/conta" title="" class="icon-user main_header_nav_menu_user_a radius transition">Minha Conta</a>
+                        <a href="#" title="" class="icon-user main_header_nav_menu_user_a radius transition jtheme_login">Login</a>
                         <nav class="radius">
                             <a href="<?= "{$configBase}/conta";?>" title="">Meus Pedidos</a>
                             <a href="<?= "{$configBase}/conta/cadastro";?>" title="">Meus dados</a>
                             <a href="<?= "{$configBase}/conta/enderecos";?>" title="">Meus endereços</a>
-                            <a href="<?= "{$configBase}/conta/sair";?>" title="">Sair</a>
+                            <a href="<?= "{$configBase}";?>" title="">Sair</a>
                         </nav>
                     </div>
                 </div>

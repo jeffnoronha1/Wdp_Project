@@ -1,4 +1,6 @@
 <?php
+ob_start();
+
 define("BASE", "https://www.localhost/wdp_project");
 define("THEME", "WdpShoes");
 define("THEME_PATH", __DIR__. "/Themes/" . THEME);
@@ -24,19 +26,25 @@ $configSiteName = "WdpShoes";
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet" />
 
+    <link rel="base" href="<?= $configBase; ?>" />
     <link rel="stylesheet" href="<?= $configBase; ?>/Assets/Styles/Icons.css" />
     <link rel="stylesheet" href="<?= $configBase; ?>/Assets/Styles/Boot.css" />
     <link rel="stylesheet" href="<?= $configThemeLink; ?>/Style.css" />
     <link rel="shortcut icon" href="<?= $configThemeLink; ?>/Images/favicon.png" />
     <script src="<?= $configBase; ?>/Assets/jquery.js"></script>
     <script src="<?= $configBase; ?>/Assets/scripts.js"></script>
+    <script src="<?= $configThemeLink; ?>/Scripts.js"></script>
 
 </head>
 
 <body>
             <?php
                 //SEARCH
-
+                $searchForm = strip_tags(trim(filter_input(INPUT_POST, "s", FILTER_DEFAULT)));
+                if(!empty($searchForm)){
+                    header("Location: {$configBase}/pesquisa/{$searchForm}");
+                    exit;
+                }
 
                 //HEADER
                 require "{$configThemePath}/header.php";
@@ -63,3 +71,4 @@ $configSiteName = "WdpShoes";
 </body>
 
 </html>
+<?php ob_end_flush();?>

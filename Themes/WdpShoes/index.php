@@ -19,7 +19,7 @@
                     <?php
                     $pdt = "06";
 
-                    require "Themes/WdpShoes/templates/product.php";
+                    require "{$configThemePath}/templates/product.php";
 
                     ?>
 
@@ -30,7 +30,7 @@
                     $pdt = 0;
                     for ($pdt = 1; $pdt < 5; $pdt++) {
 
-                        require "Themes/WdpShoes/templates/product.php";
+                        require "{$configThemePath}/templates/product.php";
                     }
                     ?>
 
@@ -48,7 +48,7 @@
                 $pdt = 0;
                 for ($pdt = 5; $pdt < 9; $pdt++) {
 
-                    require "Themes/WdpShoes/templates/product.php";
+                    require "{$configThemePath}/templates/product.php";
                 }
                 ?>
 
@@ -73,7 +73,7 @@
                             <?php
                             $pdt = "15";
 
-                            require "Themes/WdpShoes/templates/product.php";
+                            require "{$configThemePath}/templates/product.php";
 
                             ?>
                         </div>
@@ -82,7 +82,7 @@
                             <?php
                             $pdt = 0;
                             for ($pdt = 11; $pdt < 15; $pdt++) {
-                                require "Themes/WdpShoes/templates/product.php";
+                                require "{$configThemePath}/templates/product.php";
                             }
                             ?>
 
@@ -96,7 +96,7 @@
                             <?php
                             $pdt = "09";
 
-                            require "Themes/WdpShoes/templates/product.php";
+                            require "{$configThemePath}/templates/product.php";
 
                             ?>
                         </div>
@@ -106,7 +106,7 @@
                             $pdt = 0;
                             for ($pdt = 5; $pdt < 9; $pdt++) {
 
-                                require "Themes/WdpShoes/templates/product.php";
+                                require "{$configThemePath}/templates/product.php";
                             }
                             ?>
                         </div>
@@ -116,19 +116,5 @@
         </div>
     </section>
 
-    <section class="blog_gallery">
-        <div class="container">
-            <header class="main_content_header">
-                <h1 class="main_content_header_title">Blog</h1>
-            </header>
-
-            <div class="flex">
-                <?php
-                for ($b = 1; $b < 7; $b++) {
-                    require "Themes/WdpShoes/templates/article.php";
-                }
-                ?>
-            </div>
-        </div>
-    </section>
+    <?php require "{$configThemePath}/templates/blog.php"; ?>
 </main>

@@ -29,7 +29,7 @@
             <p class="main_product_checkout_economy">Economia de R$ 20,00 (25%)</p>
             <p class="main_product_checkout_parcels">Em até de 4x R$ 14,75</p>
 
-            <form class="main_product_checkout_cart">
+            <form class="main_product_checkout_cart" action="<?= $configBase; ?>/checkout">
 
                 <h2>Selecione o <b>tamanho:</b></h2>
 
@@ -39,14 +39,15 @@
                 <span class="radius transition">GG</span>
 
                 <div class="main_product_checkout_cart_act">
-                    <div class="radius">
-                    <span class="icon-plus icon-notext"></span>
-                    <input type="text" value="1">
-                    <span class="icon-minus icon-notext"></span>
-                    </div>
-
-                    <button class="btn icon-cart radius transition">COMPRAR</button>
+                <div class="radius">
+                <span class="icon-plus icon-notext"></span>
+                <input type="text" value="1">
+                <span class="icon-minus icon-notext"></span>
                 </div>
+
+                <button class="btn icon-cart radius transition">COMPRAR</button>
+                </div>
+                </form>
             </form>
 
             <aside class="main_product_checkout_related">
@@ -87,7 +88,7 @@
                 Ele é confeccionado em tecido elástico, e conta com detalhe em tule na parte da frente, que deixa o visual da peça sensual e muito mais respirável.
             Não perca tempo e compre já o seu Top Gonew Mármore Detalhe Tule Média Sustentação!</p>
 
-                <form class="main_product_checkout_cart">
+                <form class="main_product_checkout_cart" action="<?= $configBase; ?>/checkout">
 
                 <h2>Selecione o <b>tamanho:</b></h2>
 
